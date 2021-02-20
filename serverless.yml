@@ -1,0 +1,18 @@
+﻿service: serverless-express-sample
+
+provider:
+  name: aws
+  runtime: nodejs12.x
+  stage: dev
+  region: ap-northeast-1
+
+functions:
+  app:
+    handler: src/handler.main
+    events:
+      - http:
+          method: ANY
+          path: "/"
+      - http:
+          method: ANY
+          path: "{proxy+}"
