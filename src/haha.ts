@@ -9,7 +9,7 @@ app.get("/", (_, res) => {
 });
 
 app.get("/hoge", (_, res) => {
-  res.json({ message: "Hello Hoge!" });
+  res.json({ message: process.env.MESSAGE ?? "message" });
 });
 
 export default app;

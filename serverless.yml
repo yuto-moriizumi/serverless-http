@@ -8,7 +8,7 @@ provider:
 
 functions:
   app:
-    # sls deploy でデプロイ後、Lambdaのhandler設定を手動で「main.myhandler」に変更する
+    # sls deploy でデプロイ後、Lambdaのhandler設定が「main.myhandler」になっていなかったら直す
     handler: src/handler.myhandler
     events:
       - http:
