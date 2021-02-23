@@ -161,9 +161,9 @@
           "S3Bucket": {
             "Ref": "ServerlessDeploymentBucket"
           },
-          "S3Key": "serverless/serverless-express-sample/dev/1613835599834-2021-02-20T15:39:59.834Z/serverless-express-sample.zip"
+          "S3Key": "serverless/serverless-express-sample/dev/1614066342595-2021-02-23T07:45:42.595Z/serverless-express-sample.zip"
         },
-        "Handler": "src/handler.main",
+        "Handler": "dist/handler.main",
         "Runtime": "nodejs12.x",
         "FunctionName": "serverless-express-sample-dev-app",
         "MemorySize": 1024,
@@ -179,14 +179,14 @@
         "AppLogGroup"
       ]
     },
-    "AppLambdaVersioniIQeAnfisJamELWeD5iIK4J7Tg1RlHdYlQQyk2KRvFM": {
+    "AppLambdaVersion7hIbK5UMBDDS9BzFlPY2moTz2kDS50ypVlYCpqjyXLM": {
       "Type": "AWS::Lambda::Version",
       "DeletionPolicy": "Retain",
       "Properties": {
         "FunctionName": {
           "Ref": "AppLambdaFunction"
         },
-        "CodeSha256": "uXT0S1UIyeHjPJ3LX4ULExtPGfM8HMmwumdzvOOa7+0="
+        "CodeSha256": "jVoywVFYxBWpBGrIdHz04D0ja5lCoHRfXL5MOqlQLqU="
       }
     },
     "ApiGatewayRestApi": {
@@ -305,7 +305,7 @@
         "MethodResponses": []
       }
     },
-    "ApiGatewayDeployment1613835596570": {
+    "ApiGatewayDeployment1614066339459": {
       "Type": "AWS::ApiGateway::Deployment",
       "Properties": {
         "RestApiId": {
@@ -365,7 +365,7 @@
     "AppLambdaFunctionQualifiedArn": {
       "Description": "Current Lambda function version",
       "Value": {
-        "Ref": "AppLambdaVersioniIQeAnfisJamELWeD5iIK4J7Tg1RlHdYlQQyk2KRvFM"
+        "Ref": "AppLambdaVersion7hIbK5UMBDDS9BzFlPY2moTz2kDS50ypVlYCpqjyXLM"
       }
     },
     "ServiceEndpoint": {

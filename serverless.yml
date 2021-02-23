@@ -8,7 +8,7 @@ provider:
 
 functions:
   app:
-    handler: src/handler.main
+    handler: dist/handler.main
     events:
       - http:
           method: ANY
