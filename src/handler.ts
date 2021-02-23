@@ -1,7 +1,9 @@
 "use strict";
 
 import app from "./haha";
-// import serverless from "serverless-http";
-import serverless = require("serverless-http");
+import serverless from "serverless-http";
+// import serverless = require("serverless-http");
 
-module.exports.main = serverless(app);
+// module.exports.main = serverless(app);
+
+export const myhandler = serverless(app);

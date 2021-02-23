@@ -8,7 +8,8 @@ provider:
 
 functions:
   app:
-    handler: dist/handler.main
+    # sls deploy でデプロイ後、Lambdaのhandler設定を手動で「main.myhandler」に変更する
+    handler: src/handler.myhandler
     events:
       - http:
           method: ANY
@@ -16,3 +17,9 @@ functions:
       - http:
           method: ANY
           path: "{proxy+}"
+
+plugins:
+  - serverless-webpack
+
+custom:
+  webpackIncludeModules: true # enable auto-packing of external modules

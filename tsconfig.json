@@ -1,23 +1,9 @@
 {
   "compilerOptions": {
-    "lib": ["ESNext"],
-    "module": "CommonJS",
-    "moduleResolution": "node",
-    "noUnusedLocals": true,
-    "noUnusedParameters": true,
-    "removeComments": true,
     "sourceMap": true,
-    "target": "ES5",
-    "outDir": "dist",
-    "allowJs": true,
-    "allowSyntheticDefaultImports": true
-  },
-  "include": ["src/**/*.ts", "src/**/*.js"],
-  "exclude": [
-    "node_modules/**/*",
-    ".serverless/**/*",
-    ".webpack/**/*",
-    "_warmup/**/*",
-    ".vscode/**/*"
-  ]
+    "target": "ESNext",
+    "module": "ESNext",
+    "allowSyntheticDefaultImports": true,
+    "moduleResolution": "Node"
+  }
 }

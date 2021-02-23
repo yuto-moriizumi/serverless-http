@@ -1,7 +1,7 @@
 "use strict";
 
 //const express = require("express");から変更しないこと
-import express = require("express");
+import express from "express";
 const app = express();
 
 app.get("/", (_, res) => {
